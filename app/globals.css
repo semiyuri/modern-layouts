@@ -6,6 +6,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --color-white: #f7f7ff;
+  --color-black: #474448;
+  --color-red: #f4442e;
+  --color-yellow: #ffcc46;
+  --color-blue: #279af1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +24,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #474448;
+  background: var(--color-black);
 }
 
 /* HTML: <div class="loader"></div> */
 .loader {
-  --loader-color: #f4442e;
+  --loader-color: var(--color-red);
   position: relative;
   display: flex;
   align-items: center;
